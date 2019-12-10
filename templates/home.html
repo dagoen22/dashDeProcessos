@@ -1,0 +1,55 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card shadow">
+            <div class="card-header">
+                <h5 class="card-title">Atributos do servidor</h5> 
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Nome de Usuário</th>
+                            <td>{{home.usuario}}</td>
+                        </tr>
+                        <tr>
+                            <th>Quantidades de CPU</th>
+                            <td>{{home.qtd_cpus}}</td>
+                        </tr>
+                        <tr>
+                            <th>Memoria Total</th>
+                            <td>{{home.memoria_total}} GB</td>
+                        </tr>
+                        <tr>
+                            <th>Memoria Usada</th>
+                            <td>{{home.memoria_usada}} GB</td>
+                        </tr>
+                        <tr>
+                            <th>Memoria Total</th>
+                            <td>{{home.memoria_total}} GB</td>
+                        </tr>
+                        <tr>
+                            <th>Ponto de montagem do Disco</th>
+                            <td>{{home.montagem}}</td>
+                        </tr>
+                        <tr>
+                            <th>Espaço Total</th>
+                            <td>{{home.espaco_disco_total}}GB</td>
+                        </tr>
+                        <tr>
+                            <th>Espaço Livre</th>
+                            <td>{{home.espaco_disco_livre}}GB</td>
+                        </tr>
+                        <tr>
+                            <th>Espaço usado</th>
+                            <td>{{home.espaco_disco_usado}}GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
